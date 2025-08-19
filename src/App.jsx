@@ -4,6 +4,9 @@
 import './App.css'
 import Header from './Header.jsx';
 import Footer from'./Footer.jsx';
+// Import for setting routes
+import {Routes, Route} from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Login from './Login.jsx';
 
 function App() {
@@ -14,7 +17,13 @@ function App() {
     <>
       <Header/>
       <Footer/>
-      <Login/>
+
+      <BrowserRouter>
+        <Routes>
+            <Route path='/Login'  element={<Login/>}/>
+        </Routes>
+      </BrowserRouter>
+      
     </>
     // <>
     //   <div> 
