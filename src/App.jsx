@@ -2,28 +2,19 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './Header.jsx';
 import Footer from'./Footer.jsx';
-// Import for setting routes
-import {Routes, Route} from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
-import Login from './Login.jsx';
+import Home from './Home.jsx';
 
+
+// Primary router component
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     //  use fragment to return multiple compenents
     <>
-      <Header/>
-      <Footer/>
-
-      <BrowserRouter>
-        <Routes>
-            <Route path='/Login'  element={<Login/>}/>
-        </Routes>
-      </BrowserRouter>
-      
+      <Home/>
+      <Footer/>    
     </>
     // <>
     //   <div> 

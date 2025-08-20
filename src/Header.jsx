@@ -1,24 +1,31 @@
-
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function Header(){
     // return() in React doesn’t return just one component — 
     // it returns one JSX expression,
     return(
-        <header> 
+        <header className="Header"> 
             <h1>Artisans</h1>
 
-            <nav>
-                <ul>
-                    <li className="home links"><a href="">Home</a></li>
-                    <li className="home links"><a href="">About</a></li>
-                    <li className="home links" ><a href="">Sign up</a></li>
-                    
-                    <li></li>
-                </ul>
-                {/* horintal  line */}
-                <hr></hr>
-            </nav>
+            <BrowserRouter>
+                <nav>
+                    {/* Link: Creates navigation links that update the URL */}
+                    <Link to ="/">Home</Link> 
+                    <Link to ="/about">About</Link> 
+                    <Link to ="/Login">Sign-up</Link> 
+                    <hr></hr>
+                </nav>
 
+                {/* Routes and Route define your routing configuration */}
+                {/* Routes: a container for all my route definitions */}
+                <Routes>
+                    <Route path="/" element={<Home/>}/> |{" "}
+                    <Route path="/about" element={<Home/>}/> |{" "}
+                    <Route path="/Login" element={<Login/>}/>
+
+                </Routes>
+
+            </BrowserRouter>
         </header>
     );
 
