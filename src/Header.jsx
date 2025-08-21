@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Login from './Login.jsx';
+import Home from "./Home.jsx";
 
 function Header(){
     // return() in React doesn’t return just one component — 
@@ -7,25 +9,18 @@ function Header(){
         <header className="Header"> 
             <h1>Artisans</h1>
 
-            <BrowserRouter>
-                <nav>
-                    {/* Link: Creates navigation links that update the URL */}
-                    <Link to ="/">Home</Link> 
-                    <Link to ="/about">About</Link> 
-                    <Link to ="/Login">Sign-up</Link> 
-                    <hr></hr>
-                </nav>
+    
+            <nav>
+                {/* Link: Creates navigation links that update the URL */}
+                <Link to ="/">Home</Link> 
+                <Link to ="/about">About</Link> 
+                <Link to ="/Login">Sign-up</Link> 
+            </nav>
 
-                {/* Routes and Route define your routing configuration */}
-                {/* Routes: a container for all my route definitions */}
-                <Routes>
-                    <Route path="/" element={<Home/>}/> |{" "}
-                    <Route path="/about" element={<Home/>}/> |{" "}
-                    <Route path="/Login" element={<Login/>}/>
+            {/* Routes and Route define your routing configuration */}
+            {/* Routes: a container for all my route definitions */}
+            
 
-                </Routes>
-
-            </BrowserRouter>
         </header>
     );
 
