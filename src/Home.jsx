@@ -1,13 +1,22 @@
 import Footer from "./Footer";
+import Navigation from "./Navigation";
 function Home(){
     return(
-        
-        <div className="bg-[#C4CDC1] h-screen  text-[#28363D] p-4  h-150p" >
-            <h1> HOOOOOOOMMMMMEEEE</h1>
-            {/* <div mb-5>
-                <Footer/>
-            </div> */}
-        </div>
+
+        <>
+            <div className="bg-[#000000] flex h-screen  w-screen text-[#dcdbeb]  " >
+                <div>
+                    <Navigation/>
+                </div>
+                
+                <div>
+                    <h1> HOOOOOOOMMMMMEEEE</h1>
+                </div>
+            </div>
+
+            <Footer/>
+
+        </>
         
     );
 }
