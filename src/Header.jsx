@@ -7,25 +7,27 @@ function Header(){
     // it returns one JSX expression,
     return(
         <>
-            <header class="bg-[#1f2224] space-x-10  w-screen inline-flex p-5"> 
-                <div class="row-start-1 min-h-18 text-[#ffd700] "  >
+            <header className="bg-[#1f2224] space-x-10  w-screen inline-flex p-5"> 
+                <div className="row-start-1 min-h-18 text-[#ffd700] "  >
                     <h1 class="p-2">Manni</h1>
                     <h4 class="pl-3"> A community of Artisans </h4>
                 </div>
 
-                <div class="inline-grid space-x-50 space-x-reverse">
+                <div className="inline-grid space-x-50 space-x-reverse">
                         {/* <Link to ="/about">About</Link>  */}
                     <Link to ="/Login">Sign-in</Link> 
                 </div>
-                 <div class="inline-grid" >
+                 <div className="inline-grid" >
                         {/* Link: Creates navigation links that update the URL */}
+                        {/* "/" renders home as the root element */}
+                        {/* This mean this page will load on page by default */}
                     <Link to ="/">Home</Link>  {" "}
                 </div>
-                <div class="inline-grid">
+                <div className="inline-grid">
                         {/* <Link to ="/about">About</Link>  */}
                     <Link to ="/Login">Profile</Link> 
                 </div>
-                <div class="inline-grid">
+                <div className="inline-grid">
                         {/* <Link to ="/about">About</Link>  */}
                     <Link to ="/Login">Feed</Link> 
                 </div>

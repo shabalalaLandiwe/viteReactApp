@@ -22,9 +22,11 @@ function App(){
       {/* Routes: a container for all my route definitions */}
             
       <Routes>
+        <Route path="/" element ={<Home/>}/>
         <Route path="/Login" element={<Login/>}/>
+        
       </Routes>
-      <Home/>
+      
       <Footer/>    
     </BrowserRouter>
   
