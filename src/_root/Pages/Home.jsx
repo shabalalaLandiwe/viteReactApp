@@ -1,10 +1,12 @@
 import Footer from "./Footer";
 import Navigation from "./Navigation";
-function Home(){
+
+// use const so that the omepage is not overwriten due to bugs
+const Home =() => {
     return(
 
         <>
-            <div className="bg-[#000000] flex h-screen  w-screen text-[#dcdbeb]  " >
+            <div className="bg-[#000000] flex h-screen  w-screen text-[#F0F3FA]  " >
                 <div>
                     <Navigation/>
                 </div>
